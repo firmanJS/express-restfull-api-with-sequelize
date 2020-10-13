@@ -1,0 +1,21 @@
+{
+  "name": "restfull-api-sequelize",
+  "version": "1.0.0",
+  "description": "expressjs sequelize with mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "firmanjs",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "helmet": "^4.1.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.4",
+    "password-hash": "^1.2.2",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  }
+}
