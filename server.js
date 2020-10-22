@@ -1,10 +1,13 @@
-const express = require('express');
+const express = require('express')
+const app = express()
+const routes = require('./routes')
+require("dotenv").config()
 
-const app = express();
 app.use(express.urlencoded({extended: true})); 
 app.use(express.json());
+app.use(routes);
 
-const server = app.listen(3000, () => console.log('Example app listening on port 3000!'));
+const server = app.listen(process.env.APP_PORT, () => console.log(`Api Running in Port ${process.env.APP_PORT}`))
 
 process.on('SIGTERM', () => {
   console.info('SIGTERM signal received.');
