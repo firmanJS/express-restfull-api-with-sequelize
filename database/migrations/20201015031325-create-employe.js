@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING(100)
       },
       employe_role: {
-        type: Sequelize.ENUM(),
+        type: Sequelize.ENUM('engineer', 'hrd', 'analis'),
         allowNull: false,
       },
       employe_phone_number: {
