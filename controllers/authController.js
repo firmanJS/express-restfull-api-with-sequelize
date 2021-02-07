@@ -43,7 +43,7 @@ const authentication = async (req, res) => {
                 lalu kasih balikan berupa token jika login sukses
             */
             jwt.sign({ userToken }, process.env.JWT_KEY, {
-                expiresIn: '365d' //set exipre token
+                expiresIn: '8d' //set exipre token
             }, (err, token) => {
                 res.json({ token: token }).status(200)
             });
