@@ -46,5 +46,6 @@ router.post(`/api/v1/auth/login`, [checkValidationLogin], (req, res) => {
      // jika error kirim pesan error jikat tidak lanjut ke simpan data
      (!errors.isEmpty() ? res.status(422).json(errors) : auth.authentication(req, res))
 })
+router.post(`/api/v1/auth/logout`, auth.logout)
 
 module.exports = router
