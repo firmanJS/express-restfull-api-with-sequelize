@@ -15,7 +15,12 @@ const register = async (input, res) => {
         res.json(error).status(422)
     }
 }
-
+/**
+ *
+ *
+ * @param {*} req
+ * @param {*} res
+ */
 const authentication = async (req, res) => {
     try {
         const username = req.body.username.trim();
